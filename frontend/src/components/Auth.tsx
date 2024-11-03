@@ -18,11 +18,11 @@ const Auth = ({ type }: { type: "signup" | "signin" }) => {
         `${BACKEND_URL}/api/v1/user/${type === "signup" ? "signup" : "signin"}`,
         postInputs
       );
-      const jwt = response.data;
+      const jwt = response.data.jwt;
       localStorage.setItem("token", jwt);
       navigate("/blogs");
     } catch (e) {
-      // alert
+      alert("Something went wrong...");
     }
   };
 
