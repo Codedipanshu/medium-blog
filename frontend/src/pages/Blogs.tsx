@@ -1,12 +1,13 @@
 import Appbar from "../components/Appbar";
 import BlogCard from "../components/BlogCard";
+import Loader from "../components/Loader";
 import { useBlogs } from "../hoooks";
 
 const Blogs = () => {
   const { loading, blogs } = useBlogs();
 
   if (loading) {
-    return <div>loading...</div>;
+    return <Loader />;
   }
 
   return (

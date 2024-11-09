@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Appbar from "../components/Appbar";
 import FullBlog from "../components/FullBlog";
 import { useBlog } from "../hoooks";
+import Loader from "../components/Loader";
 
 const Blog = () => {
   const { id } = useParams();
@@ -10,7 +11,7 @@ const Blog = () => {
   });
 
   if (loading) {
-    return <div>loading...</div>;
+    return <Loader />;
   }
 
   return (
