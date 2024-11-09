@@ -4,7 +4,7 @@ import { Avatar } from "./BlogCard";
 const FullBlog = ({ blog }: { blog: Blog }) => {
   return (
     <div className=" flex justify-center">
-      <div className=" grid grid-cols-12 w-full px-10 pt-12 max-w-screen-xl">
+      <div className=" grid grid-cols-12 gap-8 w-full px-10 pt-12 max-w-screen-xl">
         <div className=" col-span-8">
           <div className=" text-5xl font-extrabold">{blog.title}</div>
           <div className=" text-slate-500 pt-2">Post on 2nd December</div>
