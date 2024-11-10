@@ -19,7 +19,7 @@ const Appbar = () => {
             New
           </button>
         </Link>
-        <Avatar name="dipanshu" />
+        <Avatar name="dipanshu" size="big" />
       </div>
     </div>
   );
