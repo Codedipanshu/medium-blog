@@ -15,7 +15,6 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blog/:id" element={<Blog />} />
           <Route path="/publish" element={<Publish />} />
-          <Route path="*" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </>
